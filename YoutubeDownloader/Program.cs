@@ -73,7 +73,7 @@ namespace YoutubeDownloader
                 if(wavOption.HasValue())
                 {
                     Console.WriteLine("wav変換中");
-                    WaveFormat format = new WaveFormat(16000, 16, 1);
+                    WaveFormat format = new WaveFormat();
                     Mp3FileReader reader = new Mp3FileReader(mp3FilePath);
 
                     var wavFilePath = Path.ChangeExtension(mp4FilePath, ".wav");
